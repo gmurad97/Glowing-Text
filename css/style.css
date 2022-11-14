@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css2?family=Monoton&display=swap);
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/background/baseBackground.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+p{
+    margin: 0;
+}
+
+.container{
+    font-size: 64px;
+    font-family: Monoton;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.glowRedText{
+    color: #ff0000;
+    animation: glowRedAnimation 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes glowRedAnimation {
+    from{
+        text-shadow: 0px 0px 10px #8b0000,0px 0px 20px #8b0000,0px 0px 30px #8b0000,0px 0px 40px #8b0000,0px 0px 50px #8b0000;
+    }
+    to{
+        text-shadow: 0px 0px 20px #ff0000,0px 0px 30px #ff0000,0px 0px 40px #ff0000,0px 0px 50px #ff0000,0px 0px 60px #ff0000;
+    }
+}
+
+.glowGreenText{
+    color: #7bed9f;
+    animation: glowGreenAnimation 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes glowGreenAnimation {
+    from{
+        text-shadow: 0px 0px 10px #026340,0px 0px 20px #026340,0px 0px 30px #026340,0px 0px 40px #026340,0px 0px 50px #026340;
+    }
+    to{
+        text-shadow: 0px 0px 20px #7bed9f,0px 0px 30px #7bed9f,0px 0px 40px #7bed9f,0px 0px 50px #7bed9f,0px 0px 60px #7bed9f;
+    }
+}
+
+.glowBlueText{
+    color: #0abde3;
+    animation: glowBlueAnimation 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes glowBlueAnimation {
+    from{
+        text-shadow: 0px 0px 10px #1e3799,0px 0px 20px #1e3799,0px 0px 30px #1e3799,0px 0px 40px #1e3799,0px 0px 50px #1e3799;
+    }
+    to{
+        text-shadow: 0px 0px 20px #0abde3,0px 0px 30px #0abde3,0px 0px 40px #0abde3,0px 0px 50px #0abde3,0px 0px 60px #0abde3;
+    }
+}
